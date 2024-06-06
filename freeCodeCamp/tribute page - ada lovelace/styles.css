@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+#main {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#subtitle {
+    font-size: 1.5em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#img-div {
+    margin: 20px 0;
+}
+
+#image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#img-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+#tribute-info {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+#tribute-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#tribute-link:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #main {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    #title {
+        font-size: 2em;
+    }
+
+    #subtitle {
+        font-size: 1.2em;
+    }
+
+    #tribute-info {
+        font-size: 1em;
+    }
+
+    #tribute-link {
+        padding: 10px;
+        font-size: 1em;
+    }
+}

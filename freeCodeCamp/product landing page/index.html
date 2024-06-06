@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <img src="Nlogo.jpg" alt="Company Logo" id="header-img">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Our Product</h1>
+        <p>Discover the final form of elegance with OMEGA.</p>
+        <a href="#form" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h1>Features</h1>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Chronograph Function</h3>
+                <p>The Speedmaster Professional is equipped with a chronograph complication, featuring a central chronograph hand, 30-minute, and 12-hour counters. This allows precise timing of events, which was crucial for its use during NASA's lunar missions.</p>
+            </div>
+            <div class="feature">
+                <h3>Tachymeter Scale</h3>
+                <p>The fixed bezel includes a tachymeter scale, which is used to measure speed over a known distance. This feature adds both functionality and a sporty aesthetic to the watch, enhancing its utility in professional settings.</p>
+            </div>
+            <div class="feature">
+                <h3>Durable Stainless Steel Construction</h3>
+                <p>The watch boasts a robust stainless steel case and bracelet, ensuring durability and resistance to the harsh conditions it might encounter, whether on Earth or in space. Its design is both timeless and built to withstand the test of time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are a team of dedicated professionals committed to delivering high-quality products to help you achieve your goals.</p>
+        <p>Our mission is to provide innovative solutions that improve productivity and drive success.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" id="submit" value="Subscribe">
+        </form>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video-section" class="section">
+        <h2>Watch Our Product in Action</h2>
+        <video id="video" controls>
+            <source src="Speedmaster Professional Moonwatch OMEGA.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+</body>
+</html>

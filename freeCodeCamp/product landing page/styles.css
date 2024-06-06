@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#header-img {
+    height: 50px;
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar li {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #00f;
+}
+
+/* Hero Section */
+#hero {
+    background: url('watch.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 400px 20px;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #00f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0057e7;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+
+.feature {
+    max-width: 300px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Form Section */
+#form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#form input[type="submit"] {
+    background-color: #00f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #0057e7;
+}
+
+/* Video Section */
+#video-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-bar li {
+        margin: 10px 0;
+    }
+}

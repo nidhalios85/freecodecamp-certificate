@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">My Survey</h1>
+    <p id="description">This is a brief description for the survey form</p>
+    <form action="post" id="survey-form">
+        <label for="name" id="name-label">Name</label> <br>
+        <input type="text" id="name" placeholder="name" required> <br>
+
+        <label for="email" id="email-label">Your Email</label> <br>
+        <input type="email" id="email" placeholder="youemail@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"" required> <br>
+        
+        <label for="number" id="number-label">Your Age (Optional)</label> <br>
+        <input type="number" id="number" min="0" max="100" placeholder="enter a number">
+
+        <br>
+        <label for="dropdown">What gender are you?</label> <br>
+        <select name="choices" id="dropdown">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <p>Select your favorite programming language</p>
+        <input type="radio" name="programming" id="py" checked> <label for="py">Python</label> <br>
+        <input type="radio" name="programming" id="cpp"> <label for="cpp">C++</label> <br>
+        <input type="radio" name="programming" id="js"> <label for="js">Javascript</label> <br>
+
+        <p>Which is it that you like best about web developpement?</p>
+        <input type="checkbox" name="likes" id="fe" value="Front-End"> <label for="fe">Front-End</label> <br>
+        <input type="checkbox" name="likes" id="be" value="Back-End"> <label for="be">Back-End</label> <br>
+        <input type="checkbox" name="likes" id="db" value="DataBase"> <label for="db">DataBase</label> <br>
+
+        <textarea name="additional-comments" id="comments" rows="2" cols="30">Additional Comments Here</textarea> <br>
+
+        <button type="submit" id="submit"> SUBMIT </button>
+    </form>
+</body>
+</html>
